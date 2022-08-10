@@ -51,59 +51,68 @@ header h2
     font-weight: 400;
     font-size: 1.3em;
 }
-nav
-{
-    width: 100%;
-    height: 60px;
-    background-color: #1f763b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav{
+    background-color: var(--darkgreen) !important;
 }
-nav ul
-{
-    display: flex;
+.nav-item a{
+    color: #fff !important;
 }
-nav ul li
-{
-    margin: 0px 20px;
-}
-nav ul li a
-{
-    font-size: 18px;
+.nav-item a:hover{
+    color: #fff;
     position: relative;
-    text-transform: capitalize;
-    transition-duration: 0.4s;
-    color: #fff;
 }
-nav ul li a:hover{
-    color: #fff;
-}
-/* nav ul li a::after
-{
-    position: absolute;
+
+  /* Underline From Center */
+  .hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
     content: "";
-    right: -10px;
-    height: 100%;
-    width: 2px;
-    border-radius: 10px;
-    background-color: #fff;
-} */
-nav ul li a::before
-{
     position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #ffffff;
+    height: 3px;
+    border-radius: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+  .nav-active-underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-active-underline::before {
     content: "";
-    bottom: -6px;
-    height: 2.5px;
-    border-radius: 10px;
-    width: 0%;
-    transition-duration: 0.4s;
-    background-color: #fff;
-}
-nav ul li a:hover::before
-{
-    width: 100%;
-}
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    height: 3px;
+    border-radius: 4px;
+  }
 .marks
 {
     width: 100%;
