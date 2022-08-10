@@ -9,22 +9,30 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
 </head>
 <body>
-<div class="container-fluid">
-    
+<div class="container-fluid section1">
+    <div class="header">
+        <img src="Images/e-studiez-removebg.png" alt="">
+        <a href="https://www.hitwebcounter.com" target="_blank">
+            <label>Visitors : </label><img src="https://hitwebcounter.com/counter/counter.php?page=8024989&style=0030&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>               
+    </div>
+    <h1>Welcome to eStudiez </h1>
+    <div class="login">
+        <form id="mainpage">
+            <input type="text" placeholder="Enter your name" id="usrnme"><br>
+            <input type="password" placeholder="Enter your password" id="usrpass"><br>
+            <div class="select">
+                <label for="person">Are You :</label>
+                <select name="person" id="person1" form="mainpage">
+                <option value="select">Select one</option>
+                <option value="teacher">Teacher</option>
+                <option value="parent">Parent</option>
+                <option value="student">Student</option>
+            </div>
+            </select><br>
+            <input class="button" type="submit" value="LOGIN" onclick="login()">
+        </form>
+    </div>
 </div>
-    <h1>WELCOME</h1>
-    <form id="mainpage">
-        <input type="text" placeholder="ENTER YOUR NAME" id="usrnme"><br><br><br>
-        <input type="password" placeholder="ENTER YOUR PASSWORD" id="usrpass"><br><br><br>
-        <label for="person">Are You:</label>
-        <select name="person" id="person1" form="mainpage">
-          <option value="select">SELECT ONE</option>
-          <option value="teacher">Teacher</option>
-          <option value="parent">Parent</option>
-          <option value="student">Student</option>
-        </select><br><br>
-        <input type="submit" value="LOGIN" onclick="login()">
-    </form>
 <script src="JS/index.js"></script>
 <script src="JS/bootstrap.min.js"></script>
 </body>
