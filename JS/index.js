@@ -54,17 +54,17 @@ function login()
     {
         if(person1=="teacher" && username==person[i].username && password==person[i].pasword)
         {
-            window.open("https://www.google.com");
+            window.open("teacher.html");
             return
         }
         else if(person1=="parent" && username==person[i].username && password==person[i].pasword)
         {
-            window.open("https://www.google.com");
+            window.open("parent.html");
             return
         }
         else if(person1=="student" && username==person[i].username && password==person[i].pasword)
         {
-            window.open("https://www.google.com");
+            window.open("student.html");
             return
        }
     }
