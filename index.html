@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eStudiez Portal</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    
+</div>
+    <h1>WELCOME</h1>
+    <form id="mainpage">
+        <input type="text" placeholder="ENTER YOUR NAME" id="usrnme"><br><br><br>
+        <input type="password" placeholder="ENTER YOUR PASSWORD" id="usrpass"><br><br><br>
+        <label for="person">Are You:</label>
+        <select name="person" id="person1" form="mainpage">
+          <option value="select">SELECT ONE</option>
+          <option value="teacher">Teacher</option>
+          <option value="parent">Parent</option>
+          <option value="student">Student</option>
+        </select><br><br>
+        <input type="submit" value="LOGIN" onclick="login()">
+    </form>
+<script src="JS/index.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+</body>
+</html>
