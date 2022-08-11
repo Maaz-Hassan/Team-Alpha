@@ -147,6 +147,16 @@ nav{
     /* width: 25%; */
     border: 1px solid #000;
     /* margin: 2rem 5rem; */
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
     background-color:#fff;
+}
+.marks td progress{
+  width: 100%;
+  height: 30px;
+}
+.marks .col1{
+  width: 25%;
+}
+.marks .col2{
+  width: 75%;
 }
