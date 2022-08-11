@@ -151,8 +151,8 @@ nav{
     padding: 1rem 2rem;
     /* background-color:peru; */
 }
-.marks td progress{
-  width: 100%;
+.marks td input[type="range"]{
+  width: 90%;
   height: 30px;
   /* background-color: red; */
 }
@@ -191,87 +191,4 @@ border: none;
 background-color: var(--darkgreen);
 color: #fff;
 padding: .4rem;
-}
-.teacher td input
-{
-  width: fit-content;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
-  -webkit-appearance: none;
-  margin: 0;
-}
-.help
-{
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin-top: 30px;
-  overflow: hidden;
-}
-.help .nos
-{
-  width: 200px;
-  height: 150px;
-  /* border: 1px solid black; */
-  background-color: var(--darkgreen);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-}
-.help .nos .numbers
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 25%;
-  border: 1px solid #eee;
-}
-.help .nos .numbers:hover
-{
-  transform: scale(1.1);
-}
-.help .nos .numbers h3
-{
-  color: #fff;
-  font-size: 20px;
-  /* text-align: center; */
-  margin-top: 10px;
-}
-.btmbar
-{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-color: var(--lightgreen);
-}
-.btmbar h4
-{
-  color: #eee;
-  font-size: 20px;
-  font-weight: 400;
-}
-.plus
-{
- height: 50px ; 
- position: absolute;
- right: 230px;
- margin-top: 10px;
- width: 50px ;
- border: 1px solid black;
- border-radius: 50%;
- background-color: var(--darkgreen);
- padding: 10px;
-}
-.plus img
-{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
