@@ -31,6 +31,7 @@
     height: 10rem;
 }
 .header h1{
+    font-size: 2em;
     color: var(--darkgreen);
 }
 .row{
