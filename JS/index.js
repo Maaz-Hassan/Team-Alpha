@@ -1,3 +1,5 @@
+
+
 function portal1()
         {
             var username = document.getElementById("usrnme").value;
@@ -35,5 +37,5 @@ document.getElementById("username").innerHTML = "Hi, "+localStorage.getItem("use
 document.getElementById("exampleModalLabel").innerHTML = "Hi, "+localStorage.getItem("username")+" !";
 
 function welcome(){
-    alert("Welcome," +localStorage.getItem("username")+" !")
+    alert("Welcome, " +localStorage.getItem("username")+" !")
 }
