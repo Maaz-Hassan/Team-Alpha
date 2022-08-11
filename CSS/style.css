@@ -21,31 +21,41 @@
 }
 .header{
     width: 100%;
-    margin: 1rem;
+    /* margin: 1rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     padding: 0 2rem;
+    /* background-color: red; */
 }
 .header img{
-    height: 10rem;
+    height: 220px;
+    width: 240px;
+    /* background-color: red; */
+    /* object-fit: contain; */
 }
 .header h1{
+    font-size:1.8em;
+    /* margin-top: 100px; */
     color: var(--darkgreen);
+    margin: 10px 0px;
 }
 .row{
     border: 2px solid var(--darkgreen);
     /* padding: 1rem; */
-    border-radius: 2rem;
-    height: 25rem;
-    width: 60rem;
+    border-radius: 1rem;
+    height: 22rem;
+    width: 55rem;
+    /* margin-top: 70px !important; */
 }
 .row .col-md-6{
     display: flex;
 }
 .row .form{
     background-color: #30b34a;
-    border-radius: 2rem 0 0 2rem;
+    border-radius: 1rem 0 0 1rem;
+    /* overflow: hidden; */
     height: 100%;
 }
 /* .image{
@@ -54,9 +64,12 @@
     align-items: center;
 } */
 .row .col-md-6 img{
-    padding: 3rem;
-    width: 25rem;
+    /* padding: 3rem; */
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
     margin-left: 5rem;
+    margin-top: 20px;
 }
 .login{
     margin-top: 1rem;
@@ -80,16 +93,52 @@
 .login label{
     margin: 1rem;
 }
-.login input{
+.sel1
+{
+    outline: none;
+    border: none;
+    width: 65%;
+    padding: 2px 4px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.669);
+}
+.sel1 option
+{
+    background-color: var(--darkgreen);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.login input
+{
     /* margin: .5rem; */
     padding: .5rem;
     width: 20rem;
     border: none;
     border-radius: .4rem;
-    box-shadow: 0 0 4px 1px black;
+    box-shadow: 0px 0px 10px var(--darkgreen);
     margin: 1rem;
+    outline: none;
+    border: none;
+    color: var(--darkgreen);
+    font-size: 18px;
+    font-weight: 400;
 }
-.button{
+.login input::placeholder
+{
+    color: rgba(0, 0, 0, 0.669);
+}
+.btnlogin{
     margin-top: 1rem;
     width: 5rem;
+    color:rgba(0, 0, 0, 0.669)  !important;
+    transition-duration: 0.4s;
+    background-color: #fff;
+}
+.btnlogin:hover
+{
+    background-color: var(--darkgreen);
+    color: #fff !important;
+    /* border: 0.5px solid white; */
+    letter-spacing: 1.5px;
 }
