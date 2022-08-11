@@ -8,13 +8,14 @@
     <title>Parents Portal</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="CSS/hover.css"> -->
-    <link rel="stylesheet" href="css/prnt.css">
+    <link rel="stylesheet" href="css/std.css">
 </head>
 
 <body>
     <header>
         <h1><span><img src="images/cloud.png" alt=""></span>e-Studiez</h1>
-        <h2>Hi, Mr. Maaz!</h2>
+        <h1>Parent Portal</h1>
+        <h2 id="username"></h2>
     </header>
 
     <nav class="navbar navbar-expand-lg navbar-light" style="overflow: hidden">
@@ -41,51 +42,86 @@
         </div>
       </nav>
     
-    <!-- <section class="marks">
-        <table border="1" style="text-align: center;">
-            <thead>
-                <tr>
-                    <th>Test Conducted</th>
-                    <th>Date</th>
-                    <th>Total Marks</th>
-                    <th>Obtained Marks</th>
+      <section class="marks">
+        <h1>Your child'S progress Subject Wise</h1>
+          <table style="text-align: center;">
+              <thead>
+                  <tr>
+                      <th class="col1">Subject</th>
+                      <th class="col2">Progress</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td class="col1">Math</td>
+                      <!-- <td><input type="range" name="math" id="math" value="80" min="0" max="100" disabled></td> -->
+                      <td class="col2">
+                        <div class="prog"><ul>
+                          <li>poor</li>
+                          <li>fair</li>
+                          <li>good</li>
+                          <li>best</li>
+                          <li>execlent</li>
+                        </ul></div>
+                        <progress value= "99" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                    <td class="col1">english</td>
+                    <!-- <td><input type="range" name="math" id="math" value="80" min="0" max="100" disabled></td> -->
+                    <td class="col2">
+                      <div class="prog"><ul>
+                        <li>poor</li>
+                        <li>fair</li>
+                        <li>good</li>
+                        <li>best</li>
+                        <li>execlent</li>
+                      </ul></div>
+                      <progress value= "50" max="100"></progress></td>
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Math</td>
-                    <td>08 Aug, 2022</td>
-                    <td>100</td>
-                    <td>90</td>
+                  <tr>
+                    <td class="col1">physics</td>
+                    <!-- <td><input type="range" name="math" id="math" value="80" min="0" max="100" disabled></td> -->
+                    <td class="col2">
+                      <div class="prog"><ul>
+                        <li>poor</li>
+                        <li>fair</li>
+                        <li>good</li>
+                        <li>best</li>
+                        <li>execlent</li>
+                      </ul></div>
+                      <progress value= "70" max="100"></progress></td>
                 </tr>
-                <tr>
-                    <td>english</td>
-                    <td>06 Aug, 2022</td>
-                    <td>80</td>
-                    <td>65</td>
+                  <tr>
+                    <td class="col1">chemistry</td>
+                    <!-- <td><input type="range" name="math" id="math" value="80" min="0" max="100" disabled></td> -->
+                    <td class="col2">
+                      <div class="prog"><ul>
+                        <li>poor</li>
+                        <li>fair</li>
+                        <li>good</li>
+                        <li>best</li>
+                        <li>execlent</li>
+                      </ul></div>
+                      <progress value= "70" max="100"></progress></td>
                 </tr>
-                <tr>
-                    <td>physics</td>
-                    <td>04 Aug, 2022</td>
-                    <td>100</td>
-                    <td>85</td>
+                  <tr>
+                    <td class="col1">biology</td>
+                    <!-- <td><input type="range" name="math" id="math" value="80" min="0" max="100" disabled></td> -->
+                    <td class="col2">
+                      <div class="prog"><ul>
+                        <li>poor</li>
+                        <li>fair</li>
+                        <li>good</li>
+                        <li>best</li>
+                        <li>execlent</li>
+                      </ul></div>
+                      <progress value= "50" max="100"></progress></td>
                 </tr>
-                <tr>
-                    <td>chemistry</td>
-                    <td>02 Aug, 2022</td>
-                    <td>100</td>
-                    <td>75</td>
-                </tr>
-                <tr>
-                    <td>urdu</td>
-                    <td>30 july, 2022</td>
-                    <td>100</td>
-                    <td>80</td>
-                </tr>
-            </tbody>
-        </table>
-    </section> -->
+              </tbody>
+          </table>
+      </section>
 </body>
 
 </html>
+<script src="JS/index.js"></script>
 <script src="JS/bootstrap.bundle.min.js"></script>

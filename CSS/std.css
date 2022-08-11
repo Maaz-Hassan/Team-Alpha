@@ -9,9 +9,12 @@
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
 }
+body{
+  background-color: #eee;
+}
 :root{
-    --darkgreen:#1f763b;
-    --lightgreen:#30b34a;
+    --lightgreen:#415877;
+    --darkgreen:#1b263b;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 header
@@ -59,6 +62,7 @@ nav{
 }
 .nav-item a{
     color: #fff !important;
+    text-shadow: 1px 1px 1px black ;
 }
 .nav-item a:hover{
     color: #fff;
@@ -118,21 +122,28 @@ nav{
   }
 .marks
 {
+    margin-top: 2rem;
     width: 100%;
     /* height: 50vh; */
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
     /* padding: 0px 10px; */
     text-transform: capitalize;
+    flex-direction: column;
 }
-.marks .tst
+.marks th
 {
-    width: 25%;
-    border: 1px solid whitesmoke;
-    margin: 0px 10px;
+  font-weight: 400;
+    background-color: var(--darkgreen);
+    color: #fff;
+    /* width: 25%1; */
+    border: 1px solid #000;
+    /* margin: 0px 10px; */
+    padding: 1rem;
 }
+<<<<<<< HEAD
 *
 {
     margin: 0;
@@ -165,10 +176,86 @@ nav{
 .form form
 {
   width: 40%;
+=======
+.marks td
+{
+    /* width: 25%; */
+    border: 1px solid #000;
+    /* margin: 2rem 5rem; */
+    padding: 1rem 2rem;
+    /* background-color:peru; */
+}
+.marks td progress{
+  width: 100%;
+  height: 30px;
+  /* background-color: red; */
+}
+.marks .col1{
+  width: 25%;
+}
+.marks .col2{
+  width: 75%;
+}
+.prog
+{
+  /* display: flex; */
+  width: 100%;
+  /* background-color: red; */
+}
+.prog ul
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.prog ul li
+{
+  margin: 0px 30px;
+  font-weight: 500;
+}
+tbody tr td input{
+  text-align: center;
+  width: 3rem;
+  margin: 0 !important;
+}
+tbody tr td button{
+/* width: 4rem; */
+border: none;
+background-color: var(--darkgreen);
+color: #fff;
+padding: .4rem;
+}
+.teacher td input
+{
+  width: fit-content;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.help
+{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.help .nos
+{
+  width: 200px;
+  height: 150px;
+  /* border: 1px solid black; */
+  background-color: var(--darkgreen);
+>>>>>>> 3c578b4e24f1f315e9b4508e3df27e6c56c3c944
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+<<<<<<< HEAD
 }
 .form form #txtarea
 {
@@ -224,3 +311,60 @@ marquee span
     font-weight: 500;
     margin-right: 100px;
 }
+=======
+  cursor: pointer;
+}
+.help .nos .numbers
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  border: 1px solid #eee;
+}
+.help .nos .numbers:hover
+{
+  transform: scale(1.1);
+}
+.help .nos .numbers h3
+{
+  color: #fff;
+  font-size: 20px;
+  /* text-align: center; */
+  margin-top: 10px;
+}
+.btmbar
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--lightgreen);
+}
+.btmbar h4
+{
+  color: #eee;
+  font-size: 20px;
+  font-weight: 400;
+}
+.plus
+{
+ height: 50px ; 
+ position: absolute;
+ right: 230px;
+ margin-top: 10px;
+ width: 50px ;
+ border: 1px solid black;
+ border-radius: 50%;
+ background-color: var(--darkgreen);
+ padding: 10px;
+}
+.plus img
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+>>>>>>> 3c578b4e24f1f315e9b4508e3df27e6c56c3c944

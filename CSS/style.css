@@ -9,9 +9,15 @@
     font-family: 'Poppins', sans-serif;
 }
 :root{
-    --darkgreen:#1f763b;
-    --lightgreen:#30b34a;
+    --lightgreen:#415877;
+    --darkgreen:#1b263b;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+.body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .section1{
     display: flex;
@@ -21,32 +27,91 @@
 }
 .header{
     width: 100%;
-    margin: 1rem;
+    /* margin: 1rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     padding: 0 2rem;
+    /* background-color: red; */
 }
 .header img{
-    height: 10rem;
+    height: 230px;
+    width: 250px;
+    /* background-color: red; */
+    /* object-fit: contain; */
 }
 .header h1{
+    font-size:1.8em;
+    /* margin-top: 100px; */
     color: var(--darkgreen);
+    margin: 10px 0px;
 }
 .row{
-    border: 2px solid var(--darkgreen);
+    border: 2px solid var(--lightgreen);
     /* padding: 1rem; */
-    border-radius: 2rem;
-    height: 25rem;
-    width: 60rem;
+    /* border-radius: 1rem; */
+    border-top-left-radius:20px;
+    border-bottom-right-radius:20px;
+    height: 22rem;
+    width: 55rem;
+    /* margin-top: 70px !important; */
 }
 .row .col-md-6{
     display: flex;
 }
 .row .form{
-    background-color: #30b34a;
-    border-radius: 2rem 0 0 2rem;
+    /* background-color: var(--darkgreen); */
+    border-radius: 1rem 0 0 0;
+    /* overflow: hidden; */
     height: 100%;
+    background-color: var(--lightgreen);
+}
+.mainpage
+{
+    /* background-color: purple;    */
+    height: 100%;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.mainpage input[type="text"]
+{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 2px 6px;
+    color: var(--darkgreen);
+    font-weight: 500;
+    box-shadow: 0px 0px 2px #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+
+}
+.mainpage input[type="text"]:focus
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.mainpage input[type="text"]:focus::placeholder
+{
+    color: #fff;
+}
+.mainpage input[type="radio"]
+{
+    width:15px;
+    cursor: pointer;
+    outline: none;
+}
+.mainpage label
+{
+    color: #fff;
+    font-weight: 400;
 }
 /* .image{
     display: flex !important;
@@ -54,11 +119,26 @@
     align-items: center;
 } */
 .row .col-md-6 img{
-    padding: 3rem;
-    width: 25rem;
+    /* padding: 3rem; */
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
     margin-left: 5rem;
+    margin-top: 20px;
 }
-.login{
+.tbtn
+{
+    display: flex;
+    /* background-color: aqua; */
+    /* margin: 8px 0px; */
+}
+.tbtn label
+{
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* .login{
     margin-top: 1rem;
     padding: 2rem;
     width: 100%;
@@ -74,22 +154,63 @@
     flex-direction: column;
     color: #fff;
 }
+
+.user
+{
+    margin: 0;
+} */
 /* .select{
     text-align: center;
 } */
-.login label{
+/* .login label{
     margin: 1rem;
+} */
+/* .sel1
+{
+    outline: none;
+    border: none;
+    width: 65%;
+    padding: 2px 4px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.669);
 }
-.login input{
-    /* margin: .5rem; */
+.sel1 option
+{
+    background-color: var(--darkgreen);
+    color: #fff;
+    outline: none;
+    border: none;
+} */
+/* .login input
+{
+
     padding: .5rem;
     width: 20rem;
     border: none;
     border-radius: .4rem;
-    box-shadow: 0 0 4px 1px black;
-    margin: 1rem;
+    box-shadow: 0px 0px 10px var(--darkgreen);
+
+    outline: none;
+    border: none;
+    color: var(--darkgreen);
+    font-size: 18px;
+    font-weight: 400;
 }
-.button{
+.login input::placeholder
+{
+    color: rgba(0, 0, 0, 0.669);
+} */
+.btnlogin{
     margin-top: 1rem;
     width: 5rem;
+    color:rgba(0, 0, 0, 0.669)  !important;
+    transition-duration: 0.4s;
+    background-color: #fff;
+}
+.btnlogin:hover
+{
+    background-color: var(--lightgreen);
+    color: #fff !important;
+    /* border: 0.5px solid white; */
+    letter-spacing: 1.5px;
 }

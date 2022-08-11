@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="mainpage">
+        <input type="text" placeholder="Enter your name" id="usrnme" required><br><br><br>
+        <label for="radiobtn">PLEASE SELECT THE CATEGORY YOU BELONG TO :</label><br><br>
+        <input type="radio" name="radiobtn" value="Teacher" id="tbtn"  onclick="portal1()"><label for="tbtn">TEACHER</label><br><br>
+        <input type="radio" name="radiobtn" value="Parent" id="pbtn"  onclick="portal2()"><label for="pbtn">PARENT</label><br><br>
+        <input type="radio" name="radiobtn" value="Student" id="sbtn"  onclick="portal3()"><label for="sbtn">STUDENT</label><br><br>
+    </form>
+    <script>
+          var username = document.getElementById("usrname").value;
+        localStorage.setItem("username", username);
+        function portal1()
+        {
+            window.open("https://www.google.com");
+        }
+        function portal2()
+        {
+            window.open("https://www.google.com");
+        }
+        function portal3()
+        {
+            window.open("https://www.google.com");
+        }
+   </script>
+</body>
+</html>

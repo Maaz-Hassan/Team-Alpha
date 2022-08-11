@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/std.css">
 </head>
 
-<body>
+<body onload="welcome()">
     <header>
         <h1><span><img src="images/cloud.png" alt=""></span>e-Studiez</h1>
-        <h2>Hi, M.Ahsan!</h2>
+        <h1>Student Portal</h1>
+        <h2 id="username"></h2>
     </header>
 
     <nav class="navbar navbar-expand-lg navbar-light" style="overflow: hidden">
@@ -47,14 +48,16 @@
         </div>
       </nav>
     
-    <!-- <section class="marks">
-        <table border="1" style="text-align: center;">
+    <section class="marks">
+      <h1>Your Marks Subject Wise</h1>
+        <table style="text-align: center;">
             <thead>
                 <tr>
                     <th>Test Conducted</th>
                     <th>Date</th>
                     <th>Total Marks</th>
                     <th>Obtained Marks</th>
+                    <th>Test Conduct By</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,35 +66,60 @@
                     <td>08 Aug, 2022</td>
                     <td>100</td>
                     <td>90</td>
+                    <td>Sir Maaz</td>
                 </tr>
                 <tr>
                     <td>english</td>
                     <td>06 Aug, 2022</td>
                     <td>80</td>
                     <td>65</td>
+                    <td>Sir Taha</td>
                 </tr>
                 <tr>
                     <td>physics</td>
                     <td>04 Aug, 2022</td>
                     <td>100</td>
                     <td>85</td>
+                    <td>Miss Aeliya</td>
                 </tr>
                 <tr>
                     <td>chemistry</td>
                     <td>02 Aug, 2022</td>
                     <td>100</td>
                     <td>75</td>
+                    <td>Sir Ahsan</td>
                 </tr>
                 <tr>
                     <td>urdu</td>
                     <td>30 july, 2022</td>
                     <td>100</td>
                     <td>80</td>
+                    <td>Sir Suleman</td>
                 </tr>
             </tbody>
         </table>
-    </section> -->
+    </section>
+    <section class="help">
+      <div class="nos">
+        <div class="numbers">
+          <h3>helpline</h3>
+        </div>
+        <div class="numbers">
+          <h3>03042219384</h3>
+        </div>
+        <div class="numbers">
+          <h3>03042219384</h3>
+        </div>
+        <div class="numbers">
+          <h3>03042219384</h3>
+        </div>
+      </div>
+    </section>
+    <div class="btmbar">
+      <h4>copyright &copy; 2022 | designed and developed by Team <span>ALPHA</span></h4>
+    </div>
 </body>
 
 </html>
+<script src="JS/index.js"></script>
 <script src="JS/bootstrap.bundle.min.js"></script>

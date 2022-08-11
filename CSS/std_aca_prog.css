@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+body{
+  background-color: #eee;
+}
+:root{
+    --lightgreen:#415877;
+    --darkgreen:#1b263b;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+header
+{
+    width: 100%;
+    background-color: var(--lightgreen);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+}
+header h1
+{
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    font-size: 1.8em;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid back; */
+    font-weight: 500;
+    text-transform: uppercase;
+}
+header h1 span img
+{
+    width: 45px;
+    height: 45px;
+    /* object-fit: cover; */
+    margin-top: 20px;
+    margin-right: 10px;
+}
+header h2
+{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+nav{
+    background-color: var(--darkgreen) !important;
+}
+.nav-item{
+  margin: 0 1.5rem;
+}
+.nav-item a{
+    color: #fff !important;
+    text-shadow: 1px 1px 1px black ;
+}
+.nav-item a:hover{
+    color: #fff;
+    position: relative;
+}
+
+  /* Underline From Center */
+  .hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #ffffff;
+    height: 3px;
+    border-radius: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+  .nav-active-underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-active-underline::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    height: 3px;
+    border-radius: 4px;
+  }
+.marks
+{
+    margin-top: 2rem;
+    width: 100%;
+    /* height: 50vh; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 10px; */
+    text-transform: capitalize;
+    flex-direction: column;
+}
+.marks th
+{
+  font-weight: 400;
+    background-color: var(--darkgreen);
+    color: #fff;
+    /* width: 25%1; */
+    border: 1px solid #000;
+    /* margin: 0px 10px; */
+    padding: 1rem;
+}
+.marks td
+{
+    /* width: 25%; */
+    border: 1px solid #000;
+    /* margin: 2rem 5rem; */
+    padding: 1rem 2rem;
+    /* background-color:peru; */
+}
+.marks td input[type="range"]{
+  width: 90%;
+  height: 30px;
+  /* background-color: red; */
+}
+.marks .col1{
+  width: 25%;
+}
+.marks .col2{
+  width: 75%;
+}
+.prog
+{
+  /* display: flex; */
+  width: 100%;
+  /* background-color: red; */
+}
+.prog ul
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.prog ul li
+{
+  margin: 0px 30px;
+  font-weight: 500;
+}
+tbody tr td input{
+  text-align: center;
+  width: 3rem;
+  margin: 0 !important;
+}
+tbody tr td button{
+/* width: 4rem; */
+border: none;
+background-color: var(--darkgreen);
+color: #fff;
+padding: .4rem;
+}
