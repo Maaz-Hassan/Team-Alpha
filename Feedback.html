@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/std.css">
 </head>
 
-<body>
+<body onload="showTime()">
     <header>
         <h1><span><img src="images/cloud.png" alt=""></span>e-Studiez</h1>
         <h2>Hi, M.Ahsan!</h2>
@@ -91,6 +91,49 @@
             </tbody>
         </table>
     </section> -->
+    <div class="form">
+      <h2>FEEDBACK FORM</h2>
+      <form>
+          <input type="text" placeholder="YOUR NAME" pattern="[a-z A-Z]{3,30}" required><br><br>
+          <input type="email" placeholder=" someone@somewhere.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}" required><br><br>
+          <textarea name="" id="txtarea" cols="65" rows="5" placeholder="PLEASE GIVE US YOUR VALUABLE FEEDBACK"></textarea>
+          <input type="submit" value="SUBMIT" id="btnSend">
+      </form>
+  </div>
+  <marquee behavior="scroll" direction="left" scrollamount="6" loop="infinite">
+    <span id="datetime"></span>
+    <span id="geolocation"></span>
+</marquee>
+  <script>
+  
+    // var time_geo=0;
+    function showTime()
+    {
+        var date = new Date();
+        var d = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+        var h = date.getHours(); 
+        var m = date.getMinutes();
+        var s = date.getSeconds(); 
+        time_geo = "Date  :  " + d + " / " + month + " / " + year +"  &nbsp; &nbsp; Time  :  "+ h + " : " + m + " : " + s ;
+        document.getElementById("datetime").innerHTML = time_geo;
+        setTimeout(showTime, 1000);
+    }
+    var x = document.getElementById("geolocation");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Browser is Not Supporting Geolocation";
+      }
+    }
+    function showPosition(position) {
+      x.innerHTML =  "Your Precise Location  :   Latitude ===> " + position.coords.latitude + 
+      " &nbsp;&nbsp; Longitude ===> " + position.coords.longitude;
+    }
+    getLocation();
+    </script>
 </body>
 
 </html>
