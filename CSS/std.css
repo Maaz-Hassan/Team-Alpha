@@ -135,6 +135,7 @@ nav{
 }
 .marks th
 {
+  font-weight: 400;
     background-color: var(--darkgreen);
     color: #fff;
     /* width: 25%1; */
@@ -147,16 +148,47 @@ nav{
     /* width: 25%; */
     border: 1px solid #000;
     /* margin: 2rem 5rem; */
-    padding: 1rem 3rem;
-    background-color:#fff;
+    padding: 1rem 2rem;
+    /* background-color:peru; */
 }
 .marks td progress{
   width: 100%;
   height: 30px;
+  /* background-color: red; */
 }
 .marks .col1{
   width: 25%;
 }
 .marks .col2{
   width: 75%;
+}
+.prog
+{
+  /* display: flex; */
+  width: 100%;
+  /* background-color: red; */
+}
+.prog ul
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.prog ul li
+{
+  margin: 0px 30px;
+  font-weight: 500;
+}
+tbody tr td input{
+  text-align: center;
+  width: 3rem;
+  margin: 0 !important;
+}
+tbody tr td button{
+/* width: 4rem; */
+border: none;
+background-color: var(--darkgreen);
+color: #fff;
+padding: .4rem;
 }
