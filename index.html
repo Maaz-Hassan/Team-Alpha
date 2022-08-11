@@ -7,29 +7,30 @@
     <title>eStudiez Portal</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="body">
 <div class="container-fluid section1">
     <div class="header">
-        <img src="Images/e-studiez-removebg.png" alt="">
+        <img data-aos="fade-down" data-aos-duration="2000" src="Images/e-studiez-removebg.png" alt="">
         <h1>Welcome to eStudiez Portal</h1>
     </div>
        
     
     <div class="row">
-        <div class="col-md-6 form">
+        <div data-aos="fade-right" data-aos-duration="2000" class="col-md-6 form">
             <div class="login">
                 <form id="mainpage" class="mainpage">
                     <input type="text" placeholder="Enter your name" id="usrnme" required>
                     <label for="radiobtn">PLEASE SELECT THE CATEGORY YOU BELONG TO :</label>
                     <div class="tbtn"><input type="radio" name="radiobtn" value="Teacher" id="tbtn"  onclick="portal1()"><label for="tbtn">TEACHER</label></div>
                     <div class="tbtn"><input type="radio" name="radiobtn" value="Parent" id="pbtn"  onclick="portal2()"><label for="pbtn">PARENT</label></div>
-                    <div class="tbtn"><input type="radio" name="radiobtn" value="Student" id="sbtn"  onclick="portal3()"><label for="sbtn">STUDENT</label></div>
+                    <div class="tbtn"><input type="radio" name="radiobtn" value="Student" id="sbtn"  onclick="portal3()" data-bs-toggle="modal" data-bs-target="#exampleModal"><label for="sbtn">STUDENT</label></div>
                 </form>
             </div>
         </div>
-        <div class="col-md-6">
+        <div data-aos="fade-left" data-aos-duration="2000" class="col-md-6">
             <img src="Images/Login page sticker wo bg.png" alt="">
         </div>
     </div>
@@ -38,7 +39,9 @@
 <script>
     
 </script>
-<script src="JS/index.js"></script>
 <script src="JS/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="JS/index.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
